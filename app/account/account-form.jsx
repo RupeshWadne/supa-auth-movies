@@ -60,7 +60,7 @@ export default function AccountForm({ session }) {
           </div>
           <ul className="grid grid-cols-4 gap-4 m-8">
             {data.results.map((post) => (
-              <div>
+              <div key={post.id}>
                 <div className="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 w-[22rem] p-2 rounded-lg mb-8 flex flex-col items-center border-2 border-green-500 shadow-[5px_5px_0px_1px_rgba(40,28,120)]">
                   <div className="flex flex-col h-80 w-full overflow-hidden relative">
                     <img
